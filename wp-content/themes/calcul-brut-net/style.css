@@ -65,6 +65,14 @@ body {
     font-size: 0.7rem !important;
 }
 
+.font-size-08rem {
+    font-size: 0.8rem !important;
+}
+
+.font-size-09rem {
+    font-size: 0.9rem !important;
+}
+
 .font-size-06rem {
     font-size: 0.6rem !important;
 }
@@ -119,4 +127,10 @@ input[type=range]::-ms-thumb {
 
 #travail-statut label {
     margin-bottom: 0 !important;
+}
+
+#calculator-form-reset {
+    background-color: #F48024;
+    border-color: #F48024;
+    color: #FFFFFF;
 }
