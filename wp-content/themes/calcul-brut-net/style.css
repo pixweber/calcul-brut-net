@@ -34,3 +34,89 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#site-header {
+    background-color: #FAFAFB;
+}
+
+#calculator-section {
+    background-color: #4267B2;
+}
+
+#calculator-section h1 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+    #calculator-section h1 {
+        font-size: 1.4rem;
+    }
+}
+
+.mouse-hand {
+    cursor: pointer;
+}
+
+.font-size-07rem {
+    font-size: 0.7rem !important;
+}
+
+.font-size-06rem {
+    font-size: 0.6rem !important;
+}
+
+#result-panel {
+    background-color: #F2F2F2;
+}
+
+#calculator-form label {
+    margin-bottom: 0.3rem !important;
+    font-weight: 500;
+    color: #999999;
+    font-size: 0.9rem;
+}
+
+#calculator-form .form-group {
+    margin-bottom: 0.7rem !important;
+}
+
+#calculator-form #temps-travail-form-group {
+    margin-bottom: 0 !important;
+}
+
+#calculator-form input[type="text"],#calculator-form select {
+    height: 35px;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #F48024 !important;
+    background-color: #F48024 !important;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #F48024;
+    cursor: pointer;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+    background: #F48024;
+    cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+    background: #F48024;
+    cursor: pointer;
+}
+
+#travail-statut label {
+    margin-bottom: 0 !important;
+}

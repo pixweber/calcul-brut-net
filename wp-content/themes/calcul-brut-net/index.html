@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/theme.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <div id="site-header">
+        <div id="site-header-inner" class="container pt-3 pb-3">
+            <div class="row">
+                <div class="col-sm-4">
+                    Logo
+                </div>
+                <div class="col-sm-8">
+                    Menu
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="site-content">
+        <div id="site-homepage">
+            <div id="calculator-section">
+                <div id="calculator-section-inner" class="container pt-5 pb-5">
+                    <h1 class="text-white mb-3 pl-3">Calcul du salaire brut en net</h1>
+                    <div class="rounded bg-white p-3 p-sm-4">
+                        <form id="calculator-form">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="brut-horaire">Horaire brut</label>
+                                        <input type="text" class="form-control" name="brut-horaire" id="brut-horaire">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="brut-mensuel">Mensuel brut</label>
+                                        <input type="text" class="form-control" name="brut-mensuel" id="brut-mensuel" placeholder="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="brut-annuel">Annuel brut</label>
+                                        <input type="text" class="form-control" name="brut-annuel" id="brut-annuel" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="net-horaire">Horaire net</label>
+                                        <input type="text" class="form-control" name="net-horaire" id="net-horaire">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="net-mensuel">Mensuel net</label>
+                                        <input type="text" class="form-control" name="net-mensuel" id="net-mensuel" placeholder="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="net-annuel">Annuel net</label>
+                                        <input type="text" class="form-control" name="net-annuel" id="net-annuel" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="mois-prime">Nombre de mois de prime conventionnelle</label>
+                                        <select class="form-control" name="mois-prime" id="mois-prime">
+                                            <option value="12">12 mois</option>
+                                            <option value="13">13 mois</option>
+                                            <option value="14">14 mois</option>
+                                            <option value="15">15 mois</option>
+                                            <option value="16">16 mois</option>
+                                        </select>
+                                    </div>
+                                    <div id="temps-travail-form-group" class="form-group">
+                                        <label for="temps-travail">Temps de travail : <span id="temps-travail-number">35</span>h/semaine</label>
+                                        <input type="range" class="custom-range" min="0" max="60" step="1" id="temps-travail" value="35">
+                                        <script>
+                                            $('#temps-travail').change(function(){
+                                                var temps_travail_number = $(this).val();
+                                                $('#temps-travail-number').text(temps_travail_number);
+                                            });
+                                        </script>
+                                    </div>
+
+                                    <label>Statut</label>
+                                    <div id="travail-statut" class="shadow-sm border p-2">
+                                        <div class="row">
+                                            <div class="col-2 text-center">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="statut-smic" name="radio-stacked" required value="smic">
+                                                    <label class="custom-control-label" for="statut-smic"></label>
+                                                </div>
+                                                <label for="statut-smic" class="mouse-hand font-size-07rem">
+                                                    SMIC
+                                                </label>
+                                            </div>
+                                            <div class="col-2 text-center pl-0 pr-0">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="statut-salarie-non-cadre" name="radio-stacked" required value="statut-salarie-non-cadre">
+                                                    <label class="custom-control-label" for="statut-salarie-non-cadre"></label>
+                                                </div>
+                                                <label for="statut-salarie-non-cadre" class="mouse-hand font-size-07rem">
+                                                    Salarié
+                                                    non-cadre
+                                                </label>
+                                            </div>
+                                            <div class="col-2 text-center">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="statut-salarie-cadre" name="radio-stacked" required value="statut-salarie-cadre">
+                                                    <label class="custom-control-label" for="statut-salarie-cadre"></label>
+                                                </div>
+                                                <label for="statut-salarie-cadre" class="mouse-hand font-size-07rem">
+                                                    Salarié
+                                                    cadre
+                                                </label>
+                                            </div>
+                                            <div class="col-2 text-center">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="statut-fonction-publique" name="radio-stacked" required value="statut-fonction-publique">
+                                                    <label class="custom-control-label" for="statut-fonction-publique"></label>
+                                                </div>
+                                                <label for="statut-fonction-publique" class="mouse-hand font-size-07rem">
+                                                    Fonction
+                                                    publique
+                                                </label>
+                                            </div>
+                                            <div class="col-2 text-center">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="statut-fonction-liberal" name="radio-stacked" required value="statut-fonction-liberal">
+                                                    <label class="custom-control-label" for="statut-fonction-liberal"></label>
+                                                </div>
+                                                <label for="statut-fonction-liberal" class="mouse-hand font-size-07rem">
+                                                    Fonction
+                                                    liberale
+                                                </label>
+                                            </div>
+                                            <div class="col-2 text-center">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="statut-portage-salarial" name="radio-stacked" required value="statut-portage-salarial">
+                                                    <label class="custom-control-label" for="statut-portage-salarial"></label>
+                                                </div>
+                                                <label for="statut-portage-salarial" class="mouse-hand font-size-07rem">
+                                                    Portage
+                                                    salarial
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="form-group">
+                                    <label for="metiers-populaires">Estimation moyenne rapide du revenu par metier</label>
+                                    <select class="form-control" name="metiers-populaires" id="metiers-populaires">
+                                        <option>Informaticien</option>
+                                        <option>Vendeur</option>
+                                        <option>Livreur</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div id="result-panel" class="mt-4 p-2">
+                                <div class="row">
+                                    <div class="col-sm-4 pt-3">
+                                        <div class="row">
+                                            <div class="col-2 pr-0">
+                                                <img src="img/calculator.png" width="100"/>
+                                            </div>
+                                            <div class="col-10 pt-1">
+                                                <div class="form-group">
+                                                    <label for="taux-source">Taux de prélèvement à la source : <span id="taux-source-pourcentage">0</span>%</label>
+                                                    <input type="range" class="custom-range" min="0" max="100" step="1" id="taux-source" value="0">
+                                                    <script>
+                                                        $('#taux-source').change(function(){
+                                                            var taux_source_pourcentage = $(this).val();
+                                                            $('#taux-source-pourcentage').text(taux_source_pourcentage);
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm">
+                                        <div class="form-group">
+                                            <label for="resultat-mensuel-net">Mensuel net après impôts</label>
+                                            <input type="text" name="" id="resultat-mensuel-net" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm">
+                                        <div class="form-group">
+                                            <label for="resultat-annuel-net">Annuel net après impôts </label>
+                                            <input type="text" name="" id="resultat-annuel-net" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm pl-0 pt-4 pr-4">
+                                        <button type="button" name="" id="" class="btn btn-warning btn-block btn-md">Réinitialiser</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="site-footer">
+    </div>
+</body>
+</html>
