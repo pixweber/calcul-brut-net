@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1deabe-826d-487b-a2e0-c8c30a950b3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,20 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="237">
+              <caret line="79" column="87" selection-start-line="79" selection-start-column="87" selection-end-line="79" selection-end-column="87" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/main.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-943">
-              <caret line="166" column="46" lean-forward="true" selection-start-line="166" selection-start-column="46" selection-end-line="166" selection-end-column="46" />
+            <state relative-caret-position="507">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
             </state>
           </provider>
         </entry>
@@ -41,17 +42,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="371">
+              <caret line="132" column="24" lean-forward="true" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/package.json">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+            <state relative-caret-position="254">
+              <caret line="53" column="54" lean-forward="true" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -68,27 +69,48 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jquery</find>
-      <find>popu</find>
-      <find>&lt;form</find>
-      <find>cadre</find>
-      <find>font</find>
-      <find>travail-statu</find>
-      <find>temps-travail</find>
-      <find>height: 36px;</find>
-      <find>custom-control-input</find>
       <find>Réinitialiser</find>
       <find>hand</find>
-      <find>font-size-07rem</find>
-      <find>Statut</find>
       <find>calculate</find>
       <find>mnet</find>
+      <find>font</find>
+      <find>Statut</find>
+      <find>SMIC</find>
+      <find>net-mensuel</find>
+      <find>hparm</find>
+      <find>_this</find>
+      <find>Mensuel net après impôts</find>
+      <find>var monthly_gross</find>
+      <find>monthly_gross</find>
+      <find>mensuelbrut</find>
+      <find>non-cadre</find>
+      <find>mois</find>
+      <find>tax</find>
+      <find>brut-annuel</find>
+      <find>nbmois</find>
+      <find>font-size-07rem</find>
+      <find>mois-prime</find>
+      <find>Annuel brut</find>
+      <find>horaire</find>
+      <find>radio</find>
+      <find>temps-</find>
+      <find>worktimeKeypress</find>
+      <find>tmptravail</find>
+      <find>brut-horaire</find>
+      <find>35</find>
+      <find>tmpt</find>
     </findStrings>
     <replaceStrings>
-      <replace>div class=&quot;col-2 text-center&quot;</replace>
       <replace>custom-control-input hand</replace>
+      <replace>div class=&quot;col-2 text-center&quot;</replace>
+      <replace>monthly_gross</replace>
+      <replace>gross_monthly</replace>
+      <replace>working_months</replace>
+      <replace>working_hours</replace>
       <replace>height: 26px;</replace>
+      <replace>name=&quot;taux-salaire&quot;</replace>
       <replace>custom-control-input mouse-hand</replace>
+      <replace>$(this).val()</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -100,16 +122,18 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/package.json" />
-        <option value="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/style.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/index.html" />
         <option value="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/main.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/scripts.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/index.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1932" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -180,18 +204,18 @@
       <updated>1568993147212</updated>
       <workItem from="1568993148494" duration="1376000" />
       <workItem from="1568994570579" duration="773000" />
-      <workItem from="1569068176920" duration="9863000" />
+      <workItem from="1569068176920" duration="22266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12012000" />
+    <option name="totallyTimeSpent" value="24415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25479743" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25426438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -204,7 +228,7 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.25785482" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.25460455" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -248,22 +272,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="371">
+          <caret line="132" column="24" lean-forward="true" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-943">
-          <caret line="166" column="46" lean-forward="true" selection-start-line="166" selection-start-column="46" selection-end-line="166" selection-end-column="46" />
+        <state relative-caret-position="254">
+          <caret line="53" column="54" lean-forward="true" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="79" column="87" selection-start-line="79" selection-start-column="87" selection-end-line="79" selection-end-column="87" />
         </state>
       </provider>
     </entry>

@@ -204,6 +204,7 @@ $(document).ready(function() {
         }
     })
 });
+
 $(document).ready(function() {
     var sourceKeypressSlider = document.getElementById('sourceKeypress');
     var input = document.getElementById('input-with-source-keypress');

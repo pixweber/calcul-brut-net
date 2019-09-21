@@ -104,6 +104,7 @@ body {
     color: #fff;
     border-color: #F48024 !important;
     background-color: #F48024 !important;
+    cursor: pointer;
 }
 
 /* Special styling for WebKit/Blink */
@@ -133,4 +134,8 @@ input[type=range]::-ms-thumb {
     background-color: #F48024;
     border-color: #F48024;
     color: #FFFFFF;
+}
+
+input[type="text"][disabled] {
+    background-color: #FFFFFF;
 }
