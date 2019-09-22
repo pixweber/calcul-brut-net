@@ -61,8 +61,9 @@ var calculate = {
         var sourceKeypressSlider = document.getElementById('sourceKeypress');
         sourceKeypressSlider.noUiSlider.on('update', function(values, handle) {
             calculate.txsource = parseFloat(values[handle]);
+
             var mensuelbrut = $('input#brut-mensuel').val();
-            calculate.mnetsrc(mensuelbrut, calculate.txsource)
+            calculate.mnetsrc(mensuelbrut, calculate.txsource);
         })
     },
     mnet: function(val) {
@@ -93,6 +94,7 @@ var calculate = {
         var annuelNetSource = mensuelNetSource * _this.nbmois;
         var jourNetSource = mensuelNetSource / 20;
         var horaireNetSource = mensuelNetSource / (_this.hparm) * (100 / _this.tmptravail);
+
         $('#net-mensuel-source').val(Math.round(mensuelNetSource));
         $('#net-annuel-source').val(Math.round(annuelNetSource))
     },
@@ -117,6 +119,7 @@ var calculate = {
                 }
             })
         });
+
         $('#calculator input.input').bind("change paste keyup", function() {
             if (this.value && (this.value.substr(-1, 1) != ",") && (this.value.substr(-1, 1) != ".")) {
                 switch ($(this).attr('id')) {
@@ -124,29 +127,36 @@ var calculate = {
                         var horaireBrut = _this.replaced(this.value);
                         var mensuelbrut = horaireBrut * (_this.hparm) * (_this.tmptravail / 100);
                         break;
+
                     case "brut-mensuel":
                         var mensuelbrut = _this.replaced(this.value);
                         break;
+
                     case "brut-annuel":
                         var annuelBrut = _this.replaced(this.value);
                         var mensuelbrut = annuelBrut / _this.nbmois;
                         break;
+
                     case "net-horaire":
                         var horaireNet = _this.replaced(this.value);
                         var mensuelbrut = (horaireNet * (_this.hparm)) / (1 - _this.tax) * (_this.tmptravail / 100);
                         break;
+
                     case "net-mensuel":
                         var mensuelNet = _this.replaced(this.value);
                         var mensuelbrut = mensuelNet / (1 - _this.tax);
                         break;
+
                     case "net-annuel":
                         var annuelNet = _this.replaced(this.value);
                         var mensuelbrut = annuelNet / ((1 - _this.tax) * _this.nbmois);
                         break;
+
                     default:
-                        console.log("error no case to switch")
+                        console.log("error no case to switch");
                 }
-                calculate.mnet(mensuelbrut)
+
+                calculate.mnet(mensuelbrut);
             }
         })
     },

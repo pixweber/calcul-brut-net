@@ -3,8 +3,9 @@ var global_data = {
     hourly_wage: 10.03,
     legal_monthly_hours: 151.67,
     working_hours: 100,
-    working_months: $('#mois-prime option:selected').val(),
-    salary_rate: $('input:radio[name="taux-salaire"]:checked').val()
+    working_months: parseFloat($('#mois-prime option:selected').val()),
+    salary_rate: parseFloat($('input:radio[name="salary-rate"]:checked').val()),
+    source_rate: parseFloat($('#source-rate').val())
 };
 
 /**
@@ -17,23 +18,29 @@ function calculate_and_bind_fields(gross_monthly) {
 
     var gross_monthly = gross_monthly;
     var gross_annual = gross_monthly * global_data.working_months;
-    var gross_daily = gross_monthly / 20;
     var gross_hourly = gross_monthly / (global_data.legal_monthly_hours) * (100 / global_data.working_hours);
+    
     var net_monthly = gross_monthly * (1 - global_data.salary_rate);
     var net_annual = net_monthly * global_data.working_months;
-    var net_daily = net_monthly / 20;
     var net_hourly = net_monthly / global_data.legal_monthly_hours * ( 100 / global_data.working_hours);
 
-    console.log(gross_monthly, gross_annual, gross_hourly);
-    console.log(net_monthly, net_annual, net_hourly );
+    var mensuelNetSource = (gross_monthly * (1 - global_data.salary_rate)) - (gross_monthly * (1 - global_data.salary_rate) * (global_data.source_rate / 100));
+    var annuelNetSource = mensuelNetSource * global_data.working_months;
 
-    $('#brut-horaire').val( Math.round(gross_hourly * 100) / 100 );
-    $('#brut-mensuel').val( Math.round( gross_monthly ) );
-    $('#brut-annuel').val( Math.round( gross_annual ) );
-    $('#net-horaire').val( Math.round(net_hourly * 100) / 100 );
-    $('#net-mensuel').val( Math.round( net_monthly) );
-    $('#net-annuel').val( Math.round( net_annual ) );
+    console.log('gross_monthly', gross_monthly);
+    console.log('global_data.salary_rate', global_data.salary_rate);
+    console.log('global_data.source_rate', global_data.source_rate);
+    console.log('mensuelNetSource', mensuelNetSource);
 
+    $('#gross-hourly').val( Math.round(gross_hourly * 100) / 100 );
+    $('#gross-monthly').val( Math.round( gross_monthly ) );
+    $('#gross-annual').val( Math.round( gross_annual ) );
+    $('#net-hourly').val( Math.round(net_hourly * 100) / 100 );
+    $('#net-monthly').val( Math.round( net_monthly) );
+    $('#net-annual').val( Math.round( net_annual ) );
+
+    $('#result-monthly-net').val(Math.round(mensuelNetSource));
+    $('#result-annual-net').val(Math.round(annuelNetSource))
 }
 
 console.log('Test');
@@ -47,38 +54,38 @@ $('#calculator-form input.input-data, #calculator-form select').bind("change pas
         let gross_monthly = 0;
 
         switch ($(this).attr('id')) {
-            case "brut-horaire":
+            case "gross-hourly":
                 gross_monthly = $(this).val() * (global_data.legal_monthly_hours) * (global_data.working_hours / 100);
                 break;
 
-            case "brut-mensuel":
+            case "gross-monthly":
                 gross_monthly = $(this).val();
                 break;
 
-            case "brut-annuel":
+            case "gross-annual":
                 gross_monthly = $(this).val() / global_data.working_months;
                 break;
 
-            case "net-horaire":
+            case "net-hourly":
                 gross_monthly = ( $(this).val() * (global_data.legal_monthly_hours) ) / (1 - global_data.salary_rate) * (global_data.working_hours / 100);
                 break;
 
-            case "net-mensuel":
+            case "net-monthly":
                 gross_monthly = $(this).val() / (1 - global_data.salary_rate);
                 break;
 
-            case "net-annuel":
+            case "net-annual":
                 gross_monthly = $(this).val() / ((1 - global_data.salary_rate) * global_data.working_months);
                 break;
 
             case "mois-prime":
                 global_data.working_months = $(this).val();
-                gross_monthly = $('#brut-mensuel').val();
+                gross_monthly = $('#gross-monthly').val();
                 break;
 
             case "temps-travail":
                 global_data.working_hours = $(this).val();
-                gross_monthly = $('#brut-mensuel').val();
+                gross_monthly = $('#gross-monthly').val();
                 break;
 
             default:
@@ -89,14 +96,22 @@ $('#calculator-form input.input-data, #calculator-form select').bind("change pas
     }
 });
 
-$("input[name='taux-salaire']").change(function(){
-    global_data.salary_rate = $("input[name='taux-salaire']:checked").val();
-    calculate_and_bind_fields($('#brut-mensuel').val());
+$("input[name='salary-rate']").change(function(){
+    global_data.salary_rate = $("input[name='salary-rate']:checked").val();
+    calculate_and_bind_fields($('#gross-monthly').val());
+});
+
+$("#source-rate").change(function(){
+    global_data.source_rate = parseFloat($(this).val());
+
+    console.log(global_data.source_rate);
+
+    calculate_and_bind_fields( $('#gross-monthly').val() );
 });
 
 $("#temps-travail").change(function(){
     /*global_data.working_hours = ( $(this).val() / 35) * 100;
-    calculate_and_bind_fields($('#brut-mensuel').val());*/
+    calculate_and_bind_fields($('#gross-monthly').val());*/
     var selected_working_hours = $(this).val();
 
     if ( selected_working_hours == '0') {
@@ -106,11 +121,12 @@ $("#temps-travail").change(function(){
 
     var old_working_hours = global_data.working_hours;
     global_data.working_hours = $(this).val();
-    var mensuelbrut = $('#brut-mensuel').val();
+    var monthlygross = $('#gross-monthly').val();
 
-    calculate_and_bind_fields(mensuelbrut * (global_data.working_hours / old_working_hours))
+    calculate_and_bind_fields(monthlygross * (global_data.working_hours / old_working_hours))
 });
 
 $("#metiers-populaires").change(function(){
-    calculate_and_bind_fields($(this).val());
+    calculate_and_bind_fields( $(this).val() );
 });
+

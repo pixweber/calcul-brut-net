@@ -77,6 +77,14 @@ body {
     font-size: 0.6rem !important;
 }
 
+.font-size-2rem {
+    font-size: 2rem !important;
+}
+
+.text-green {
+    color: #00CC00;
+}
+
 #result-panel {
     background-color: #F2F2F2;
 }
@@ -138,4 +146,56 @@ input[type=range]::-ms-thumb {
 
 input[type="text"][disabled] {
     background-color: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px) {
+    #site-header .navbar .nav-item.active {
+        background-color: #F48024;
+        color: #FFFFFF;
+        padding: 7px 20px !important;
+        -webkit-border-radius: 18px;
+        -moz-border-radius: 18px;
+        border-radius: 18px;
+    }
+
+    #site-header .navbar .nav-item {
+        margin-right: 15px;
+    }
+}
+
+#result-monthly-net, #result-annual-net {
+    font-weight: bold;
+    color: #00CC00;
+    font-size: 1.2rem;
+}
+
+#site-content-section {
+    background-color: #EEEEEE;
+}
+
+#site-footer {
+    background-color: #4E4E4E;
+}
+
+.footer-col-title {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #BBC0C4;
+}
+
+.footer-col-list li {
+    list-style-type: none;
+}
+
+.footer-col-list li a, .footer-col-list li {
+    color: #848D95;
+}
+
+#footer-social ul li {
+    display: inline;
+    margin-right: 0.7rem;
+}
+
+#footer-social ul li a {
+    font-size: 2.95rem;
 }

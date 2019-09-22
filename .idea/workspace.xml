@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1deabe-826d-487b-a2e0-c8c30a950b3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,17 +24,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="79" column="87" selection-start-line="79" selection-start-column="87" selection-end-line="79" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/scripts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="109" selection-start-line="109" selection-end-line="109" />
+            <state relative-caret-position="340">
+              <caret line="287" column="61" selection-start-line="287" selection-start-column="61" selection-end-line="287" selection-end-column="61" />
+              <folding>
+                <element signature="e#16498#16506#0" expanded="true" />
+                <element signature="e#16740#16748#0" expanded="true" />
+                <element signature="e#16770#16778#0" expanded="true" />
+                <element signature="e#16844#16852#0" expanded="true" />
+                <element signature="e#16852#16860#0" expanded="true" />
+                <element signature="e#16871#16879#0" expanded="true" />
+                <element signature="e#16880#16888#0" expanded="true" />
+                <element signature="e#16939#16947#0" expanded="true" />
+                <element signature="e#16967#16975#0" expanded="true" />
+                <element signature="e#17019#17027#0" expanded="true" />
+                <element signature="e#17032#17040#0" expanded="true" />
+                <element signature="e#17088#17096#0" expanded="true" />
+                <element signature="e#17099#17107#0" expanded="true" />
+                <element signature="e#17134#17141#0" expanded="true" />
+                <element signature="e#17189#17197#0" expanded="true" />
+                <element signature="e#17494#17502#0" expanded="true" />
+                <element signature="e#17528#17536#0" expanded="true" />
+                <element signature="e#17557#17565#0" expanded="true" />
+                <element signature="e#17610#17618#0" expanded="true" />
+                <element signature="e#17736#17743#0" expanded="true" />
+                <element signature="e#17761#17768#0" expanded="true" />
+                <element signature="e#17769#17777#0" expanded="true" />
+                <element signature="e#17822#17828#1" expanded="true" />
+                <element signature="e#19604#19612#0" expanded="true" />
+                <element signature="e#19685#19693#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,8 +60,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="132" column="24" lean-forward="true" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
+            <state relative-caret-position="476">
+              <caret line="199" column="19" selection-start-line="199" selection-start-column="19" selection-end-line="199" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/scripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="96" column="3" lean-forward="true" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -51,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="53" column="54" lean-forward="true" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+            <state relative-caret-position="781">
+              <caret line="66" column="10" lean-forward="true" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -69,29 +96,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Réinitialiser</find>
-      <find>hand</find>
-      <find>calculate</find>
-      <find>mnet</find>
-      <find>font</find>
-      <find>Statut</find>
-      <find>SMIC</find>
-      <find>net-mensuel</find>
-      <find>hparm</find>
-      <find>_this</find>
-      <find>Mensuel net après impôts</find>
-      <find>var monthly_gross</find>
-      <find>monthly_gross</find>
-      <find>mensuelbrut</find>
-      <find>non-cadre</find>
-      <find>mois</find>
-      <find>tax</find>
-      <find>brut-annuel</find>
-      <find>nbmois</find>
-      <find>font-size-07rem</find>
       <find>mois-prime</find>
       <find>Annuel brut</find>
-      <find>horaire</find>
       <find>radio</find>
       <find>temps-</find>
       <find>worktimeKeypress</find>
@@ -99,18 +105,48 @@
       <find>brut-horaire</find>
       <find>35</find>
       <find>tmpt</find>
+      <find>net-mensuel-source</find>
+      <find>brut</find>
+      <find>horaire</find>
+      <find>mensuel</find>
+      <find>annuel</find>
+      <find>tax</find>
+      <find>_this.tax</find>
+      <find>resultat</find>
+      <find>mensuelbrut</find>
+      <find>get_txsource</find>
+      <find>source_rate</find>
+      <find>taux-salaire</find>
+      <find>txsource</find>
+      <find>mensuelNetSource</find>
+      <find>result-monthly-net</find>
+      <find>mnetsrc</find>
+      <find>taux-source</find>
+      <find>salary-rate</find>
+      <find>site-content-inner</find>
+      <find>cal</find>
+      <find>site-homepage</find>
     </findStrings>
     <replaceStrings>
       <replace>custom-control-input hand</replace>
       <replace>div class=&quot;col-2 text-center&quot;</replace>
       <replace>monthly_gross</replace>
-      <replace>gross_monthly</replace>
       <replace>working_months</replace>
       <replace>working_hours</replace>
       <replace>height: 26px;</replace>
       <replace>name=&quot;taux-salaire&quot;</replace>
       <replace>custom-control-input mouse-hand</replace>
       <replace>$(this).val()</replace>
+      <replace>hourly</replace>
+      <replace>gross</replace>
+      <replace>monthly</replace>
+      <replace>annual</replace>
+      <replace>global_data.salary_rate</replace>
+      <replace>result</replace>
+      <replace>source_rate</replace>
+      <replace>salary-rate</replace>
+      <replace>gross_monthly</replace>
+      <replace>source-rate</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -123,8 +159,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/package.json" />
         <option value="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/main.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/scripts.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/calcul-brut-net/index.html" />
       </list>
     </option>
@@ -192,6 +228,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/calcul-brut-en-net.com/wp-content/themes/calcul-brut-net/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -205,17 +251,19 @@
       <workItem from="1568993148494" duration="1376000" />
       <workItem from="1568994570579" duration="773000" />
       <workItem from="1569068176920" duration="22266000" />
+      <workItem from="1569104971348" duration="645000" />
+      <workItem from="1569143917381" duration="12190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24415000" />
+    <option name="totallyTimeSpent" value="37250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25426438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2595949" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -270,31 +318,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="132" column="24" lean-forward="true" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="53" column="54" lean-forward="true" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+        <state relative-caret-position="781">
+          <caret line="66" column="10" lean-forward="true" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        <state relative-caret-position="357">
+          <caret line="96" column="3" lean-forward="true" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="199" column="19" selection-start-line="199" selection-start-column="19" selection-end-line="199" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/calcul-brut-net/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="79" column="87" selection-start-line="79" selection-start-column="87" selection-end-line="79" selection-end-column="87" />
+        <state relative-caret-position="340">
+          <caret line="287" column="61" selection-start-line="287" selection-start-column="61" selection-end-line="287" selection-end-column="61" />
+          <folding>
+            <element signature="e#16498#16506#0" expanded="true" />
+            <element signature="e#16740#16748#0" expanded="true" />
+            <element signature="e#16770#16778#0" expanded="true" />
+            <element signature="e#16844#16852#0" expanded="true" />
+            <element signature="e#16852#16860#0" expanded="true" />
+            <element signature="e#16871#16879#0" expanded="true" />
+            <element signature="e#16880#16888#0" expanded="true" />
+            <element signature="e#16939#16947#0" expanded="true" />
+            <element signature="e#16967#16975#0" expanded="true" />
+            <element signature="e#17019#17027#0" expanded="true" />
+            <element signature="e#17032#17040#0" expanded="true" />
+            <element signature="e#17088#17096#0" expanded="true" />
+            <element signature="e#17099#17107#0" expanded="true" />
+            <element signature="e#17134#17141#0" expanded="true" />
+            <element signature="e#17189#17197#0" expanded="true" />
+            <element signature="e#17494#17502#0" expanded="true" />
+            <element signature="e#17528#17536#0" expanded="true" />
+            <element signature="e#17557#17565#0" expanded="true" />
+            <element signature="e#17610#17618#0" expanded="true" />
+            <element signature="e#17736#17743#0" expanded="true" />
+            <element signature="e#17761#17768#0" expanded="true" />
+            <element signature="e#17769#17777#0" expanded="true" />
+            <element signature="e#17822#17828#1" expanded="true" />
+            <element signature="e#19604#19612#0" expanded="true" />
+            <element signature="e#19685#19693#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
