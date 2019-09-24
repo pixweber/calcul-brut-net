@@ -75,7 +75,7 @@
 
 		initialize: function() {
 			var properties = [
-				this.model.get('header').url,
+				this.model.get('header.old.php').url,
 				this.model.get('choice')
 			];
 

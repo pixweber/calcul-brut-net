@@ -50,8 +50,8 @@
 		},
 
 		destroy: function() {
-			var data = this.get('header'),
-				curr = api.HeaderTool.currentHeader.get('header').attachment_id;
+			var data = this.get('header.old.php'),
+				curr = api.HeaderTool.currentHeader.get('header.old.php').attachment_id;
 
 			// If the image we're removing is also the current header, unset
 			// the latter
@@ -71,15 +71,15 @@
 
 		save: function() {
 			if (this.get('random')) {
-				api('header_image').set(this.get('header').random);
-				api('header_image_data').set(this.get('header').random);
+				api('header_image').set(this.get('header.old.php').random);
+				api('header_image_data').set(this.get('header.old.php').random);
 			} else {
-				if (this.get('header').defaultName) {
-					api('header_image').set(this.get('header').url);
-					api('header_image_data').set(this.get('header').defaultName);
+				if (this.get('header.old.php').defaultName) {
+					api('header_image').set(this.get('header.old.php').url);
+					api('header_image_data').set(this.get('header.old.php').defaultName);
 				} else {
-					api('header_image').set(this.get('header').url);
-					api('header_image_data').set(this.get('header'));
+					api('header_image').set(this.get('header.old.php').url);
+					api('header_image_data').set(this.get('header.old.php'));
 				}
 			}
 
@@ -87,7 +87,7 @@
 		},
 
 		importImage: function() {
-			var data = this.get('header');
+			var data = this.get('header.old.php');
 			if (data.attachment_id === undefined) {
 				return;
 			}
@@ -144,7 +144,7 @@
 
 		// Ordered from most recently used to least
 		comparator: function(model) {
-			return -model.get('header').timestamp;
+			return -model.get('header.old.php').timestamp;
 		},
 
 		initialize: function() {
@@ -193,7 +193,7 @@
 		},
 
 		maybeRemoveOldCrop: function( model ) {
-			var newID = model.get( 'header' ).attachment_id || false,
+			var newID = model.get( 'header.old.php' ).attachment_id || false,
 			 	oldCrop;
 
 			// Bail early if we don't have a new attachment ID.
@@ -202,7 +202,7 @@
 			}
 
 			oldCrop = this.find( function( item ) {
-				return ( item.cid !== model.cid && item.get( 'header' ).attachment_id === newID );
+				return ( item.cid !== model.cid && item.get( 'header.old.php' ).attachment_id === newID );
 			} );
 
 			// If we found an old crop, remove it from the collection.

@@ -82,7 +82,7 @@ body {
 }
 
 .text-green {
-    color: #00CC00;
+    color: #00CC00 !important;
 }
 
 #result-panel {

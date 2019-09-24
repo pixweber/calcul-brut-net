@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="27c27af4-5f16-411f-ba69-ebe1cd5f11f5" name="Salaire Brut Net" url="http://52.47.142.147">
+        <fileTransfer host="52.47.142.147" port="22" privateKey="C:\Users\The Hau LE\Google Drive\Projets_Thierry_The_Hau\Salaire-Brut-Net\Serveur\keypair-calcul-salaire-brut-net.pem" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

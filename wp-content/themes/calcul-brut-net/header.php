@@ -1,80 +1,35 @@
-<?php
-/**
- * The header for our theme.
- *
- * Displays all of the <head> section and everything up till <div id="content">
- *
- * @package understrap
- */
-
-// Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
-
-$container = get_theme_mod( 'understrap_container_type' );
-?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html lang="en">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<?php wp_head(); ?>
+    <meta charset="UTF-8">
+    <title>Calcul votre salaire brut en net</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="<?php echo TEMPLATE_PATH; ?>/css/theme.min.css" />
+    <link rel="stylesheet" href="<?php echo TEMPLATE_PATH; ?>/style.css" />
+    <?php wp_head(); ?>
+    <!--<script type="text/javascript" src="<?php /*echo TEMPLATE_PATH; */?>/node_modules/jquery/dist/jquery.min.js"></script>-->
+    <script type="text/javascript" src="<?php echo TEMPLATE_PATH; ?>/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
-
-<body <?php body_class(); ?>>
-<?php do_action( 'wp_body_open' ); ?>
-<div class="site" id="page">
-
-	<!-- ******************* The Navbar Area ******************* -->
-	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
-
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-
-		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
-
-		<?php if ( 'container' == $container ) : ?>
-			<div class="container">
-		<?php endif; ?>
-
-					<!-- Your site title as branding in the menu -->
-					<?php if ( ! has_custom_logo() ) { ?>
-
-						<?php if ( is_front_page() && is_home() ) : ?>
-
-							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
-
-						<?php else : ?>
-
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
-
-						<?php endif; ?>
-
-
-					<?php } else {
-						the_custom_logo();
-					} ?><!-- end custom logo -->
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav ml-auto',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'depth'           => 2,
-						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-					)
-				); ?>
-			<?php if ( 'container' == $container ) : ?>
-			</div><!-- .container -->
-			<?php endif; ?>
-
-		</nav><!-- .site-navigation -->
-
-	</div><!-- #wrapper-navbar end -->
+<body>
+<div id="site-header">
+    <div id="site-header-inner" class="container pt-3 pb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">CalculBrutEnNet</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav pl-md-5">
+                    <a class="nav-item nav-link active" href="#">Calcul de salaire</a>
+                    <a class="nav-item nav-link" href="#">Emploi</a>
+                    <a class="nav-item nav-link" href="#">CV & Lettre de motivation</a>
+                    <a class="nav-item nav-link disabled" href="#">SMIC</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div id="site-content">
+    <div id="site-content-inner">

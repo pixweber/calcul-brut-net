@@ -3699,7 +3699,7 @@ showdown.subParser('hashHTMLBlocks', function (text, options, globals) {
         'math',
         'style',
         'section',
-        'header',
+        'header.old.php',
         'footer',
         'nav',
         'article',
@@ -4908,7 +4908,7 @@ showdown.subParser('makeMarkdown.emphasis', function (node, globals) {
   return txt;
 });
 
-showdown.subParser('makeMarkdown.header', function (node, globals, headerLevel) {
+showdown.subParser('makeMarkdown.header.old.php', function (node, globals, headerLevel) {
   'use strict';
 
   var headerMark = new Array(headerLevel + 1).join('#'),
@@ -5064,22 +5064,22 @@ showdown.subParser('makeMarkdown.node', function (node, globals, spansOnly) {
     // BLOCKS
     //
     case 'h1':
-      if (!spansOnly) { txt = showdown.subParser('makeMarkdown.header')(node, globals, 1) + '\n\n'; }
+      if (!spansOnly) { txt = showdown.subParser('makeMarkdown.header.old.php')(node, globals, 1) + '\n\n'; }
       break;
     case 'h2':
-      if (!spansOnly) { txt = showdown.subParser('makeMarkdown.header')(node, globals, 2) + '\n\n'; }
+      if (!spansOnly) { txt = showdown.subParser('makeMarkdown.header.old.php')(node, globals, 2) + '\n\n'; }
       break;
     case 'h3':
-      if (!spansOnly) { txt = showdown.subParser('makeMarkdown.header')(node, globals, 3) + '\n\n'; }
+      if (!spansOnly) { txt = showdown.subParser('makeMarkdown.header.old.php')(node, globals, 3) + '\n\n'; }
       break;
     case 'h4':
-      if (!spansOnly) { txt = showdown.subParser('makeMarkdown.header')(node, globals, 4) + '\n\n'; }
+      if (!spansOnly) { txt = showdown.subParser('makeMarkdown.header.old.php')(node, globals, 4) + '\n\n'; }
       break;
     case 'h5':
-      if (!spansOnly) { txt = showdown.subParser('makeMarkdown.header')(node, globals, 5) + '\n\n'; }
+      if (!spansOnly) { txt = showdown.subParser('makeMarkdown.header.old.php')(node, globals, 5) + '\n\n'; }
       break;
     case 'h6':
-      if (!spansOnly) { txt = showdown.subParser('makeMarkdown.header')(node, globals, 6) + '\n\n'; }
+      if (!spansOnly) { txt = showdown.subParser('makeMarkdown.header.old.php')(node, globals, 6) + '\n\n'; }
       break;
 
     case 'p':

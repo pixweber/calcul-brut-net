@@ -6720,7 +6720,7 @@ var inlite = (function (domGlobals) {
       var attach = function () {
         elm.id = headerId;
       };
-      return create$4('header', getElementText(elm), '#' + headerId, getLevel(elm), attach);
+      return create$4('header.old.php', getElementText(elm), '#' + headerId, getLevel(elm), attach);
     };
     var anchorTarget = function (elm) {
       var anchorId = elm.id || elm.name;
@@ -6834,7 +6834,7 @@ var inlite = (function (domGlobals) {
       }
       return fileType === 'file' ? join([
         filterByQuery(term, fromHistoryMenuItems(history)),
-        filterByQuery(term, fromMenuItems('header')),
+        filterByQuery(term, fromMenuItems('header.old.php')),
         filterByQuery(term, anchorMenuItems())
       ]) : filterByQuery(term, fromHistoryMenuItems(history));
     };
