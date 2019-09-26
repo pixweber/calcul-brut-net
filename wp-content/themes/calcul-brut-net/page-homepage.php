@@ -196,10 +196,25 @@
                         <p>Donec vitae lacus at turpis tempor auctor in pellentesque eros. Donec sit amet nunc risus. Proin rutrum, lectus at pharetra cursus, nulla lorem lacinia augue, vel maximus enim ipsum non massa. Quisque sit amet elit luctus, vestibulum ligula et, rhoncus urna. Vestibulum ut pellentesque magna. Maecenas lacinia placerat rutrum. Nunc consectetur viverra maximus.</p>
                     </div>
                 </div>
-
                 <div class="card mt-4">
                     <div class="card-body">
-                        <h4 class="card-title">Pourquoi calculer votre salaire brut net ?</h4>
+                        <h4 class="card-title">Organismes partenaires de l'aide au retour à l'emploi</h4>
+                        <hr />
+                        <p>Aliquam scelerisque ex vitae arcu feugiat condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam porttitor id nunc eget consequat. Proin egestas fringilla vulputate. Phasellus eu augue ut dolor porta finibus. Nunc egestas malesuada maximus.</p>
+                        <p>Donec vitae lacus at turpis tempor auctor in pellentesque eros. Donec sit amet nunc risus. Proin rutrum, lectus at pharetra cursus, nulla lorem lacinia augue, vel maximus enim ipsum non massa. Quisque sit amet elit luctus, vestibulum ligula et, rhoncus urna. Vestibulum ut pellentesque magna. Maecenas lacinia placerat rutrum. Nunc consectetur viverra maximus.</p>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Le SMIC</h4>
+                        <hr />
+                        <p>Aliquam scelerisque ex vitae arcu feugiat condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam porttitor id nunc eget consequat. Proin egestas fringilla vulputate. Phasellus eu augue ut dolor porta finibus. Nunc egestas malesuada maximus.</p>
+                        <p>Donec vitae lacus at turpis tempor auctor in pellentesque eros. Donec sit amet nunc risus. Proin rutrum, lectus at pharetra cursus, nulla lorem lacinia augue, vel maximus enim ipsum non massa. Quisque sit amet elit luctus, vestibulum ligula et, rhoncus urna. Vestibulum ut pellentesque magna. Maecenas lacinia placerat rutrum. Nunc consectetur viverra maximus.</p>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Conseils sur comment construire un bon CV et une bonne lettre de motivation</h4>
                         <hr />
                         <p>Aliquam scelerisque ex vitae arcu feugiat condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam porttitor id nunc eget consequat. Proin egestas fringilla vulputate. Phasellus eu augue ut dolor porta finibus. Nunc egestas malesuada maximus.</p>
                         <p>Donec vitae lacus at turpis tempor auctor in pellentesque eros. Donec sit amet nunc risus. Proin rutrum, lectus at pharetra cursus, nulla lorem lacinia augue, vel maximus enim ipsum non massa. Quisque sit amet elit luctus, vestibulum ligula et, rhoncus urna. Vestibulum ut pellentesque magna. Maecenas lacinia placerat rutrum. Nunc consectetur viverra maximus.</p>
