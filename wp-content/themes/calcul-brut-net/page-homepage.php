@@ -10,7 +10,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="gross-hourly">Horaire brut</label>
-                                <input type="text" class="input-data form-control" name="gross-hourly" id="gross-hourly" value="0">
+                                <input type="text" class="input-data form-control" name="gross-hourly" id="gross-hourly" value="0.00">
                             </div>
 
                             <div class="form-group">
@@ -133,13 +133,17 @@
                     </div>
 
                     <div>
-                        <div class="form-group pt-4">
-                            <label for="metiers-populaires">Ou selectionner un metier,</label>
+                        <div class="form-group pt-3">
+                            <label for="metiers-populaires">Ou sélectionner un métier,</label>
                             <select class="form-control" name="metiers-populaires" id="metiers-populaires">
-                                <option value="0">pour connaitre rapidement son revenu moyen en France (ex. Informaticien, Caissier, Infirmier)</option>
-                                <option value="70000">Informaticien</option>
-                                <option value="2500">Vendeur</option>
-                                <option value="2400">Livreur</option>
+                                <option value="0">pour connaitre rapidement son revenu moyen en France</option>
+                                <optgroup label="Informatique">
+                                    <option value="70000">Informaticien</option>
+                                </optgroup>
+                                <optgroup label="Commerce">
+                                    <option value="2500">Vendeur</option>
+                                    <option value="2400">Livreur</option>
+                                </optgroup>
                             </select>
                         </div>
                     </div>
