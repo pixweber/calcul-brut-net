@@ -2,7 +2,7 @@
 
     <!--Calculator section-->
     <div id="calculator-section">
-        <div id="calculator-section-inner" class="container pt-5 pb-5">
+        <div id="calculator-section-inner" class="container pt-3 pb-5">
             <h1 class="text-white mb-3 pl-3">Calcul du salaire brut en net</h1>
             <div class="rounded bg-light-grey p-3 p-sm-4">
                 <form id="calculator-form">
@@ -133,7 +133,7 @@
                     </div>
 
                     <div>
-                        <div class="form-group">
+                        <div class="form-group pt-4">
                             <label for="metiers-populaires">Ou selectionner un metier,</label>
                             <select class="form-control" name="metiers-populaires" id="metiers-populaires">
                                 <option value="0">pour connaitre rapidement son revenu moyen en France (ex. Informaticien, Caissier, Infirmier)</option>
