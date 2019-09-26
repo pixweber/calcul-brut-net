@@ -169,6 +169,10 @@ input[type="text"][disabled] {
     font-size: 1.2rem;
 }
 
+#calculator-form  label.result-monthly-net-label, #calculator-form label.result-annual-net-label {
+    margin-bottom: 0rem !important;
+}
+
 #site-content-section {
     background-color: #EEEEEE;
 }
@@ -198,4 +202,17 @@ input[type="text"][disabled] {
 
 #footer-social ul li a {
     font-size: 2.95rem;
+}
+
+.bg-light-grey {
+    background-color: #e7e5ec !important;}
+
+label {
+    color: black !important;}
+
+#travail-statut{
+    background-color: #F2F2F2 !important;}
+
+.text-warning-salaire-brut{
+    color: #F48024 !important;
 }

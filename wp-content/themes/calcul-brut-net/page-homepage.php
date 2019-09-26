@@ -4,7 +4,7 @@
     <div id="calculator-section">
         <div id="calculator-section-inner" class="container pt-5 pb-5">
             <h1 class="text-white mb-3 pl-3">Calcul du salaire brut en net</h1>
-            <div class="rounded bg-white p-3 p-sm-4">
+            <div class="rounded bg-light-grey p-3 p-sm-4">
                 <form id="calculator-form">
                     <div class="row">
                         <div class="col">
@@ -57,11 +57,11 @@
                             </div>
 
                             <div class="row">
-                                <div class="col">
+                                <div class="col-3">
                                     <label>Statut</label>
                                 </div>
-                                <div class="col text-right font-size-08rem text-warning pt-1">
-                                    Votre salaire brut : -20%
+                                <div class="col text-right font-size-08rem text-warning-salaire-brut pt-1">
+                                    Retenu sur votre salaire brut :<br/><b>- 20%</b>
                                 </div>
                             </div>
                             <div id="travail-statut" class="shadow-sm border p-2">
@@ -87,7 +87,7 @@
                                             non-cadre
                                         </label>
                                     </div>
-                                    <div class="col-2 text-center">
+                                    <div class="col-2 text-center pl-0 pr-0">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input mouse-hand" id="statut-salarie-cadre" name="salary-rate" required value="0.25">
                                             <label class="custom-control-label" for="statut-salarie-cadre"></label>
@@ -97,7 +97,7 @@
                                             cadre
                                         </label>
                                     </div>
-                                    <div class="col-2 text-center">
+                                    <div class="col-2 text-center pl-0 pr-0">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input mouse-hand" id="statut-fonction-publique" name="salary-rate" required value="0.15">
                                             <label class="custom-control-label" for="statut-fonction-publique"></label>
@@ -107,7 +107,7 @@
                                             publique
                                         </label>
                                     </div>
-                                    <div class="col-2 text-center">
+                                    <div class="col-2 text-center pl-0 pr-0">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input mouse-hand" id="statut-fonction-liberal" name="salary-rate" required value="0.45">
                                             <label class="custom-control-label" for="statut-fonction-liberal"></label>
@@ -117,7 +117,7 @@
                                             liberale
                                         </label>
                                     </div>
-                                    <div class="col-2 text-center">
+                                    <div class="col-2 text-center pl-0 pr-0">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input mouse-hand" id="statut-portage-salarial" name="salary-rate" required value="0.51">
                                             <label class="custom-control-label" for="statut-portage-salarial"></label>
@@ -134,8 +134,9 @@
 
                     <div>
                         <div class="form-group">
-                            <label for="metiers-populaires">Estimation moyenne rapide du revenu par metier</label>
+                            <label for="metiers-populaires">Ou selectionner un metier,</label>
                             <select class="form-control" name="metiers-populaires" id="metiers-populaires">
+                                <option value="0">pour connaitre rapidement son revenu moyen en France (ex. Informaticien, Caissier, Infirmier)</option>
                                 <option value="70000">Informaticien</option>
                                 <option value="2500">Vendeur</option>
                                 <option value="2400">Livreur</option>
@@ -145,7 +146,7 @@
 
                     <div id="result-panel" class="mt-4 p-2">
                         <div class="row">
-                            <div class="col-sm-4 pt-3">
+                            <div class="col-sm-4 pt-1">
                                 <div class="row">
                                     <div class="col-2 pr-0 text-center font-size-2rem">
                                         <img src="<?php echo TEMPLATE_URI; ?>/img/calculator.png" width="100"/>
@@ -153,7 +154,7 @@
                                     </div>
                                     <div class="col-10 pt-1">
                                         <div class="form-group">
-                                            <label for="source-rate">Taux de prélèvement à la source : <span id="source-rate-percent">0</span>%</label>
+                                            <label for="source-rate">Avec taux de prélèvement<br/>à la source : <span id="source-rate-percent">0</span>%</label>
                                             <input type="range" class="custom-range" min="0" max="100" step="1" id="source-rate" value="0">
                                         </div>
                                     </div>
@@ -161,17 +162,17 @@
                             </div>
                             <div class="col-12 col-sm">
                                 <div class="form-group">
-                                    <label for="result-monthly-net">Mensuel net après impôts</label>
+                                    <label for="result-monthly-net">Mensuel net</label><br/><label>après impôts</label>
                                     <input type="text" name="result-monthly-net" id="result-monthly-net" class="form-control" disabled value="0">
                                 </div>
                             </div>
                             <div class="col-12 col-sm">
                                 <div class="form-group">
-                                    <label for="result-annual-net">Annuel net après impôts </label>
+                                    <label for="result-annual-net">Annuel net</label><br/><label>après impôts </label>
                                     <input type="text" name="result-annual-net" id="result-annual-net" class="form-control" disabled value="0">
                                 </div>
                             </div>
-                            <div class="col-12 col-sm pl-0 pt-4 pr-4">
+                            <div class="col-12 col-sm pl-5 pt-5 pr-5">
                                 <button type="button" id="calculator-form-reset" class="btn btn-warning btn-block btn-md">Réinitialiser</button>
                             </div>
                         </div>
