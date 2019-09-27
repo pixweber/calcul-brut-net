@@ -9,17 +9,17 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
-                                <label for="gross-hourly" class="gross-blink">Horaire brut</label>
+                                <label for="gross-hourly" class="gross-blink">Horaire brut en €</label>
                                 <input type="text" class="input-data form-control" name="gross-hourly" id="gross-hourly" value="0.00">
                             </div>
 
                             <div class="form-group">
-                                <label for="gross-monthly" class="gross-blink">Mensuel brut</label>
+                                <label for="gross-monthly" class="gross-blink">Mensuel brut en €</label>
                                 <input type="text" class="input-data form-control" name="gross-monthly" id="gross-monthly" placeholder="" value="0">
                             </div>
 
                             <div class="form-group">
-                                <label for="gross-annual" class="gross-blink">Annuel brut</label>
+                                <label for="gross-annual" class="gross-blink">Annuel brut en €</label>
                                 <input type="text" class="input-data form-control" name="gross-annual" id="gross-annual" placeholder="" value="0">
                             </div>
                         </div>
@@ -132,23 +132,7 @@
                         </div>
                     </div>
 
-                    <div>
-                        <div class="form-group pt-3">
-                            <label for="metiers-populaires">Ou sélectionner un métier,</label>
-                            <select class="form-control" name="metiers-populaires" id="metiers-populaires">
-                                <option value="0">pour connaitre rapidement son revenu moyen en France</option>
-                                <optgroup label="Informatique">
-                                    <option value="70000">Informaticien</option>
-                                </optgroup>
-                                <optgroup label="Commerce">
-                                    <option value="2500">Vendeur</option>
-                                    <option value="2400">Livreur</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div id="result-panel" class="mt-4 p-2">
+                    <div id="result-panel" class="mt-3 p-2">
                         <div class="row">
                             <div class="col-sm-4 pt-1">
                                 <div class="row">
@@ -181,7 +165,38 @@
                             </div>
                         </div>
                     </div>
+                </form>
+            </div>
+            <div class="rounded bg-light-grey pl-3 pr-3">
+                <form id="quick-selection-form">
+                    <div class="row">
+                        <div class="col-lg-3 pl-4 pt-3 pb-1" style="color:blue">
+                            SELECTION RAPIDE
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="col-12 col-sm pl-5 pt-4 pr-5 pb-3">
+                                <button type="button" id="smic" class="btn btn-warning btn-block btn-md">SMIC</button>
+                            </div>                       
+                        </div>
+                        <div id="quick-selection-panel" class="col-lg-9">
+                            <div class="form-group pt-2">
+                                <label for="metiers-populaires">Ou sélectionner un métier,</label>
+                                <select class="form-control" name="metiers-populaires" id="metiers-populaires">
+                                    <option value="0">pour connaitre rapidement son revenu moyen en France</option>
+                                    <optgroup label="Informatique">
+                                        <option value="70000">Informaticien</option>
+                                    </optgroup>
+                                    <optgroup label="Commerce">
+                                        <option value="2500">Vendeur</option>
+                                        <option value="2400">Livreur</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
 
+                    </div>
                 </form>
             </div>
         </div>
