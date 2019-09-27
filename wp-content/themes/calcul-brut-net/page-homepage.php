@@ -9,17 +9,17 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
-                                <label for="gross-hourly">Horaire brut</label>
+                                <label for="gross-hourly" class="gross-blink">Horaire brut</label>
                                 <input type="text" class="input-data form-control" name="gross-hourly" id="gross-hourly" value="0.00">
                             </div>
 
                             <div class="form-group">
-                                <label for="gross-monthly">Mensuel brut</label>
+                                <label for="gross-monthly" class="gross-blink">Mensuel brut</label>
                                 <input type="text" class="input-data form-control" name="gross-monthly" id="gross-monthly" placeholder="" value="0">
                             </div>
 
                             <div class="form-group">
-                                <label for="gross-annual">Annuel brut</label>
+                                <label for="gross-annual" class="gross-blink">Annuel brut</label>
                                 <input type="text" class="input-data form-control" name="gross-annual" id="gross-annual" placeholder="" value="0">
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-5">
+                        <div class="col-lg-5">
                             <div class="form-group">
                                 <label for="mois-prime">Nombre de mois de prime conventionnelle</label>
                                 <select class="form-control" name="mois-prime" id="mois-prime">

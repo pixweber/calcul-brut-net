@@ -33,7 +33,11 @@ jQuery(document).ready(function($){
         console.log('global_data.source_rate', global_data.source_rate);
         console.log('mensuelNetSource', mensuelNetSource);
 
-        $('#gross-hourly').val( Math.round(gross_hourly * 100) / 100 );
+        if (gross_monthly == '0'){
+            $('#gross-hourly').val('0.00');
+        } else {
+            $('#gross-hourly').val( Math.round(gross_hourly * 100) / 100 );
+        }
         $('#gross-monthly').val( Math.round( gross_monthly ) );
         $('#gross-annual').val( Math.round( gross_annual ) );
         $('#net-hourly').val( Math.round(net_hourly * 100) / 100 );
@@ -42,6 +46,7 @@ jQuery(document).ready(function($){
 
         $('#result-monthly-net').val(Math.round(mensuelNetSource));
         $('#result-annual-net').val(Math.round(annuelNetSource))
+
     }
 
     console.log('Test');
@@ -141,6 +146,33 @@ jQuery(document).ready(function($){
         var temps_travail_number = $(this).val();
         $('#temps-travail-number').text(temps_travail_number);
     });
+
+
+    function fillgrossmonthly1500(){
+        calculate_and_bind_fields(5);
+      }
+      
+      function fillgrossmonthly3000(){
+        calculate_and_bind_fields(50);
+      }
+      
+      function fillgrossmonthly4500(){
+        calculate_and_bind_fields(500);
+      }
+      
+      function fillgrossmonthly6000(){
+        calculate_and_bind_fields(5000);
+      }
+      
+      function fillgrossmonthly7500(){
+        calculate_and_bind_fields(0);
+      }
+      
+      setTimeout(fillgrossmonthly1500, 1500);
+      setTimeout(fillgrossmonthly3000, 3000);
+      setTimeout(fillgrossmonthly4500, 4500);
+      setTimeout(fillgrossmonthly6000, 6000);
+      setTimeout(fillgrossmonthly7500, 7500);
 
 });
 

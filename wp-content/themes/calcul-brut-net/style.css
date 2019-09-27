@@ -216,3 +216,17 @@ label {
 .text-warning-salaire-brut{
     color: #F48024 !important;
 }
+
+
+.gross-blink {
+    color: #1d1dd8 !important;
+    animation: blinker 2s;
+    animation-iteration-count: 4;
+  }
+  
+@keyframes blinker {
+  50% {
+    opacity: 0;
+    color: blue;
+  }
+}
