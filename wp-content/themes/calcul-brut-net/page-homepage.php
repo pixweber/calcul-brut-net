@@ -134,6 +134,11 @@
 
                     <div id="result-panel" class="mt-3 p-2">
                         <div class="row">
+                            <div class="col-lg-3 pl-3 pt-1 pb-0" style="color:blue">
+                                RESULTAT                            
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col-sm-4 pt-1">
                                 <div class="row">
                                     <div class="col-2 pr-0 text-center font-size-2rem">
