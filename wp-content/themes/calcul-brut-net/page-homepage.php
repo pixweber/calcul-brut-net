@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-
+    <div id="before-calculator-section">
+    </div>
     <!--Calculator section-->
     <div id="calculator-section">
         <div id="calculator-section-inner" class="container pt-3 pb-5">

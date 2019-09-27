@@ -53,7 +53,7 @@ jQuery(document).ready(function($){
 
     $("#metiers-populaires").change(function() {
         $('html, body').animate({
-            scrollTop:$('#calculator-section').offset().top
+            scrollTop: $('#before-calculator-section').offset().top - 50
         }, 1200);
     });
 
