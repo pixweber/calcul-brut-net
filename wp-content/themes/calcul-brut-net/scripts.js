@@ -51,6 +51,12 @@ jQuery(document).ready(function($){
 
     console.log('Test');
 
+    $("#metiers-populaires").change(function() {
+        $('html, body').animate({
+            scrollTop:$('#calculator-section').offset().top
+        }, 1200);
+    });
+
     $('#calculator-form input.input-data, #calculator-form select').bind("change paste keyup", function() {
 
         if ($(this).val()) {
@@ -148,31 +154,32 @@ jQuery(document).ready(function($){
     });
 
 
-    function fillgrossmonthly1500(){
+    function fillgrossmonthly1(){
         calculate_and_bind_fields(5);
-      }
-      
-      function fillgrossmonthly3000(){
+    }
+    
+    function fillgrossmonthly2(){
         calculate_and_bind_fields(50);
-      }
-      
-      function fillgrossmonthly4500(){
+    }
+    
+    function fillgrossmonthly3(){
         calculate_and_bind_fields(500);
-      }
-      
-      function fillgrossmonthly6000(){
+    }
+    
+    function fillgrossmonthly4(){
         calculate_and_bind_fields(5000);
-      }
-      
-      function fillgrossmonthly7500(){
+    }
+    
+    function fillgrossmonthly5(){
         calculate_and_bind_fields(0);
-      }
-      
-      setTimeout(fillgrossmonthly1500, 1500);
-      setTimeout(fillgrossmonthly3000, 3000);
-      setTimeout(fillgrossmonthly4500, 4500);
-      setTimeout(fillgrossmonthly6000, 6000);
-      setTimeout(fillgrossmonthly7500, 7500);
+    }
+    
+    setTimeout(fillgrossmonthly1, 1000);
+    setTimeout(fillgrossmonthly2, 2000);
+    setTimeout(fillgrossmonthly3, 3000);
+    setTimeout(fillgrossmonthly4, 4000);
+    setTimeout(fillgrossmonthly5, 5000);
+
 
 });
 
