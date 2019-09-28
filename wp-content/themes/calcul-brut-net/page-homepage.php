@@ -221,6 +221,7 @@
                         <p>Donec vitae lacus at turpis tempor auctor in pellentesque eros. Donec sit amet nunc risus. Proin rutrum, lectus at pharetra cursus, nulla lorem lacinia augue, vel maximus enim ipsum non massa. Quisque sit amet elit luctus, vestibulum ligula et, rhoncus urna. Vestibulum ut pellentesque magna. Maecenas lacinia placerat rutrum. Nunc consectetur viverra maximus.</p>
                     </div>
                 </div>
+<!-- IN THE TO-DO LIST FOR THE NEXT VERSION
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4 class="card-title">Organismes partenaires de l'aide au retour à l'emploi</h4>
@@ -229,6 +230,7 @@
                         <p>Donec vitae lacus at turpis tempor auctor in pellentesque eros. Donec sit amet nunc risus. Proin rutrum, lectus at pharetra cursus, nulla lorem lacinia augue, vel maximus enim ipsum non massa. Quisque sit amet elit luctus, vestibulum ligula et, rhoncus urna. Vestibulum ut pellentesque magna. Maecenas lacinia placerat rutrum. Nunc consectetur viverra maximus.</p>
                     </div>
                 </div>
+
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4 class="card-title">Le SMIC</h4>
@@ -245,6 +247,7 @@
                         <p>Donec vitae lacus at turpis tempor auctor in pellentesque eros. Donec sit amet nunc risus. Proin rutrum, lectus at pharetra cursus, nulla lorem lacinia augue, vel maximus enim ipsum non massa. Quisque sit amet elit luctus, vestibulum ligula et, rhoncus urna. Vestibulum ut pellentesque magna. Maecenas lacinia placerat rutrum. Nunc consectetur viverra maximus.</p>
                     </div>
                 </div>
+-->
             </div>
         </div>
     </div>

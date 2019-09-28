@@ -23,9 +23,11 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav pl-md-5">
                     <a class="nav-item nav-link active" href="#">Calcul de salaire</a>
-                    <a class="nav-item nav-link" href="#">Emploi</a>
+                    <!-- IN THE TO-DO LIST FOR THE NEXT VERSION
+                    <a class="nav-item nav-link" href="#">Aide retour à l'emploi</a>
                     <a class="nav-item nav-link" href="#">CV & Lettre de motivation</a>
                     <a class="nav-item nav-link disabled" href="#">SMIC</a>
+                    ... -->
                 </div>
             </div>
         </nav>
