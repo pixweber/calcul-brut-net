@@ -210,9 +210,9 @@
     <!--End calculator section-->
 
     <!--Content section-->
-    <div id="site-content-section" class="p-5">
+    <div id="site-content-section" class="pt-3 pb-3">
         <div id="site-content-section-inner">
-            <div class="container">
+            <div class="container pl-3 pr-3">
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Calculer son salaire net</h4>
